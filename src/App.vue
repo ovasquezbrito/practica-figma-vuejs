@@ -25,12 +25,11 @@ export default {
 
 <style>
 #app{
-   
+   padding: 10px 5px;
 }
 .container {
-  position: relative;
   display: flex;
   align-items: center;
-  margin: 0;
+ 
 }
 </style>
