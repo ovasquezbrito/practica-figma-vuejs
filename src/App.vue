@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+      <div class="container">
+
+          <flower-text />
+          <card-figma />
+        
+      </div>
+      
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import CardFigma from './components/CardFigma.vue';
+import FlowerText from './components/FlowerText.vue';
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    FlowerText,
+    CardFigma
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app{
+   
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 </style>
